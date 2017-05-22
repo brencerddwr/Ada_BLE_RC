@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{c09bfc75-9132-4dbb-ab15-706248eb1fa7}</ProjectGuid>
+    <avrdevice>atmega32u4</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Ada_BLE_RC</AssemblyName>
+    <Name>Ada_BLE_RC</Name>
+    <RootNamespace>Ada_BLE_RC</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>
+    </OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>0</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.26.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega32u4__</Value>
+      <Value>__AVR_ATmega32U4__</Value>
+      <Value>ARDUINO=10802</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=8000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_FEATHER32U4</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x239A</Value>
+      <Value>USB_PID=0x800C</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51/utility</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/variants/feather32u4</Value>
+      <Value>../../../Ada_BLE_RC</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/avr/</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.8.1/include</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.3/include</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega32u4__</Value>
+      <Value>__AVR_ATmega32U4__</Value>
+      <Value>ARDUINO=10802</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=8000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_FEATHER32U4</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x239A</Value>
+      <Value>USB_PID=0x800C</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51/utility</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/variants/feather32u4</Value>
+      <Value>../../../Ada_BLE_RC</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/avr/</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.8.1/include</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.3/include</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51;D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51/utility;D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library;D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library/utility;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src;C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire;C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire/utility;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries;C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries;D:/Users/Richard/My Documents/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/variants/feather32u4;../../../Ada_BLE_RC;C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/;C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/avr/;C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.8.1/include;C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.2/include;C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.3/include;C:/Program Files (x86)/Arduino/libraries/Servo/src;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <arduino.build.auto_discover_includes>1</arduino.build.auto_discover_includes>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega32u4__</Value>
+      <Value>__AVR_ATmega32U4__</Value>
+      <Value>ARDUINO=10802</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=8000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_FEATHER32U4</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x239A</Value>
+      <Value>USB_PID=0x800C</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51/utility</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/variants/feather32u4</Value>
+      <Value>../../../Ada_BLE_RC</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/avr/</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.8.1/include</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.3/include</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega32u4__</Value>
+      <Value>__AVR_ATmega32U4__</Value>
+      <Value>ARDUINO=10802</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=8000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_FEATHER32U4</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x239A</Value>
+      <Value>USB_PID=0x800C</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51/utility</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries</Value>
+      <Value>D:/Users/Richard/My Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/variants/feather32u4</Value>
+      <Value>../../../Ada_BLE_RC</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/avr/</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.8.1/include</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.3/include</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51;D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_BluefruitLE_nRF51/utility;D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library;D:/Users/Richard/My Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library/utility;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src;C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire;C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries/Wire/utility;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries;C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/libraries;D:/Users/Richard/My Documents/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Users/Richard/AppData/Local/arduino15/packages/adafruit/hardware/avr/1.4.9/variants/feather32u4;../../../Ada_BLE_RC;C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/;C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/avr/include/avr/;C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.8.1/include;C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.2/include;C:/Users/Richard/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/4.9.2-atmel3.5.4-arduino2/lib/gcc/avr/4.9.3/include;C:/Program Files (x86)/Arduino/libraries/Servo/src;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <arduino.build.auto_discover_includes>1</arduino.build.auto_discover_includes>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Ada_BLE_RC.ino">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BluefruitConfig.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="packetParser.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="__vm\.Ada_BLE_RC.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
