@@ -99,26 +99,22 @@ void setup(void)
 
 	R_MOTOR->setSpeed(0);
 	R_MOTOR->run(RELEASE);
-	
+
 	Serial.begin(115200);
 	Serial.println(F("Adafruit Bluefruit Robot Controller Example"));
 	Serial.println(F("-----------------------------------------"));
 
 	/* Initialize the module */
 	BLEsetup();
-	
+
 
 }
 
 int velocity = 0;
-
 float x, y;
-
 int L_restrict = 0;
 int R_restrict = 0;
-
 unsigned long lastAccelPacket = 0;
-
 bool modeToggle = false;
 
 void loop(void)
@@ -144,7 +140,7 @@ void loop(void)
 
 	//if no accelerometer, use control pad
 	if( !modeToggle ) buttonMode();
-	
+
 }
 
 
@@ -225,7 +221,7 @@ bool buttonMode(){
 
 	//	static unsigned long lastPress = 0;
 	uint8_t maxspeed;
-	
+
 
 	// Buttons
 	if (packetbuffer[1] == 'B') {
@@ -244,18 +240,18 @@ bool buttonMode(){
 				maxspeed = TurningSpeed;
 
 			}
-			
+
 			if(buttnum == 2){
 				isMoving = true;
 				L_MOTOR->run(FORWARD);
 				R_MOTOR->run(RELEASE);
 				maxspeed = TurningSpeed;
 
-				
+
 			}
 
 			if(buttnum == 3){
-				
+
 			}
 
 			if(buttnum == 4){
